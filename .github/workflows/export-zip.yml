@@ -1,0 +1,16 @@
+name: Export frontend ZIP
+on:
+  push:
+    branches: [main]
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create ZIP
+        run: zip -r vanguardfx-frontend.zip . -x ".git/*"
+      - name: Upload ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: vanguardfx-frontend
+          path: vanguardfx-frontend.zip
