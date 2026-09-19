@@ -1,0 +1,1 @@
+import{useEffect,useState}from"react";import{createSignalSocket}from"../lib/websocket";export function useWebSocket(onMessage:(data:unknown)=>void){const[state,setState]=useState("DISCONNECTED");useEffect(()=>createSignalSocket(onMessage,setState),[onMessage]);return state}
