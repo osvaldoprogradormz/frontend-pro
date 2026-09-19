@@ -1,0 +1,1 @@
+import{describe,it,expect}from"vitest";import{config}from"./config";describe("frontend configuration",()=>{it("uses environment defaults",()=>{expect(config.apiBaseUrl).toContain("http");expect(config.wsUrl).toContain("ws");});});
