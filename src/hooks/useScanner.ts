@@ -1,0 +1,1 @@
+import{useMutation}from"@tanstack/react-query";import{api}from"../lib/api";export const useScanner=()=>useMutation({mutationFn:(body:unknown)=>api.scan(body)});
