@@ -1,0 +1,1 @@
+import{StateView}from"../components/common/StateView";export default function Backtest(){return <section><h1 className="text-2xl font-bold">Backtest</h1><div className="mt-6"><StateView title="BACKTEST API NOT CONNECTED" detail="Nenhum endpoint de backtest HTTP confirmado. Nenhum resultado é simulado."/></div></section>}
