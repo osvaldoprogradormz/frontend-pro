@@ -1,0 +1,1 @@
+export function StateView({title,detail}:{title:string;detail?:string}){return <div className="rounded-xl border border-slate-800 bg-vf-card p-8 text-center"><div className="font-medium">{title}</div>{detail&&<div className="mt-2 text-sm text-slate-500">{detail}</div>}</div>}
