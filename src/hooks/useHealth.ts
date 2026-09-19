@@ -1,0 +1,1 @@
+import{useQuery}from"@tanstack/react-query";import{api}from"../lib/api";export const useHealth=()=>useQuery({queryKey:["health"],queryFn:api.health,refetchInterval:10000});
