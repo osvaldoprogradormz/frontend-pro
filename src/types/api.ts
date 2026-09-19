@@ -1,0 +1,1 @@
+export interface Signal{symbol?:string;timeframe?:string;strategy_type?:string;direction?:string;entry_price?:number;stop_loss?:number;take_profit?:number;confluence_score?:number;status?:string;outcome?:string;timestamp?:string;[key:string]:unknown}export interface ApiResult<T=unknown>{data:T|null;status:number;available:boolean;error?:string}
