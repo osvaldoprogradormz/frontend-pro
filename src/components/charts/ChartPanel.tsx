@@ -1,0 +1,1 @@
+import{StateView}from"../common/StateView";export function ChartPanel({data}:{data:unknown}){if(!data)return <StateView title="NO CHART DATA" detail="Aguardando dados reais do backend."/ >;return <pre className="max-h-[500px] overflow-auto rounded-xl border border-slate-800 bg-vf-card p-4 text-xs">{JSON.stringify(data,null,2)}</pre>}
