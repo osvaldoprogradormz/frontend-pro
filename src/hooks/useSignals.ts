@@ -1,0 +1,1 @@
+import{useQuery}from"@tanstack/react-query";import{api}from"../lib/api";export const useSignals=()=>useQuery({queryKey:["signals"],queryFn:api.signals,refetchInterval:10000});
